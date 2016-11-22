@@ -1,15 +1,22 @@
 {
-	"manifest_version": 2,
-	"name": "Cloud To Butt",
-	"version": "1.0",
-	"description": "Replaces the text 'the cloud' with 'my butt'.",
-	"content_scripts": 
+  "manifest_version": 2,
+
+  "name": "Beat Xichgan",
+  "description": "This extension replaces every M with X for Beat Xichgan week",
+  "version": "1.0.1",
+  "content_scripts": 
 	[
 		{
 			"matches": ["*://*/*"],
-			"js": ["content_script.js"],
+			"js": ["beatxichigan.js"],
 			"run_at": "document_end"
 		}
-	]
+	],
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
 }
-
